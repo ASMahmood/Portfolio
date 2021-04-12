@@ -23,10 +23,11 @@ export default function HomePage() {
           </div>
         </Col>
       </Row>
-      <Row>
-        <Col xs={12}>
-          <div className="aboutSection"></div>
-          <div className="projectsSection"></div>
+      <Row className="mt-5 h-75">
+        <Col xs={12} className="position-relative">
+          <div className="aboutSection">HI</div>
+          <div className="projectsSection">HELLO</div>
+          <div className="teamProjectsSection">BONJOUR</div>
         </Col>
       </Row>
     </Container>

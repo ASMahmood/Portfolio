@@ -3,11 +3,73 @@
   margin-top: 10vh;
   width: 80vw;
   height: 700px;
-  border-radius: 15px;
+  border-radius: 80px 15px 15px 15px;
 }
 .profilePic {
   height: 150px;
   width: 150px;
   object-fit: cover;
-  border-radius: 100%;
+  border-radius: 75px 5px 5px 5px;
+}
+.aboutSection {
+  position: absolute;
+  background-color: bisque;
+  border-radius: 0 0 15px 15px;
+  width: 95%;
+  height: 90%;
+  z-index: 5;
+}
+.aboutSection::before {
+  position: absolute;
+  padding: 5px;
+  content: "About";
+  width: 120px;
+  height: 40px;
+  background-color: bisque;
+  border-radius: 5px 5px 0 0;
+  top: -40px;
+  left: 50px;
+}
+
+.projectsSection {
+  position: absolute;
+  background-color: brown;
+  border-radius: 0 0 15px 15px;
+  width: 95%;
+  height: 90%;
+  left: 2%;
+  z-index: 3;
+}
+
+.projectsSection::before {
+  position: absolute;
+  padding: 5px 1px;
+  content: "Solo Projects";
+  width: 120px;
+  height: 40px;
+  background-color: brown;
+  border-radius: 5px 5px 0 0;
+  top: -40px;
+  left: 150px;
+}
+.teamProjectsSection {
+  position: absolute;
+  background-color: cadetblue;
+  border-radius: 0 0 15px 15px;
+  width: 95%;
+  height: 90%;
+  left: 3%;
+  z-index: 1;
+}
+
+.teamProjectsSection::before {
+  position: absolute;
+  padding: 5px 1px;
+  content: "Team Projects";
+  width: 120px;
+  height: 40px;
+  background-color: cadetblue;
+  border-radius: 5px 5px 0 0;
+  top: -40px;
+  left: 250px;
 }
