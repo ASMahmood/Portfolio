@@ -26,7 +26,7 @@ export default function HomePage() {
       <Row className="mt-5 h-75">
         <Col xs={12} className="position-relative">
           <div className="aboutSection">HI</div>
-          <div className="projectsSection">HELLO</div>
+          <div className="projectsSection activeTab">HELLO</div>
           <div className="teamProjectsSection">BONJOUR</div>
         </Col>
       </Row>
