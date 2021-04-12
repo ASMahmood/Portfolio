@@ -7,3 +7,12 @@
   top: 30px;
   bottom: 30px;
 }
+
+.skillHalf ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skillHalf p {
+  margin-bottom: 2px;
+}
