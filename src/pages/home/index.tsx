@@ -5,6 +5,7 @@ import { Dispatch } from "redux";
 import { connect } from "react-redux";
 import { reduxStore } from "../../types/reduxInterfaces";
 import { changeTabDispatch } from "../../types/dispatchInterfaces";
+import profilePic from "../../profilePic.jpeg";
 import "./home.css";
 
 type homePageType = reduxStore & changeTabDispatch;
@@ -24,11 +25,7 @@ function HomePage(props: homePageType) {
     <Container id="homepage">
       <Row>
         <Col xs={12} className="d-flex align-items-center p-2">
-          <img
-            src="https://res.cloudinary.com/dhmw620tl/image/upload/v1613076291/benchmark3/jgzt2ecwelboqfq8uelx.jpg"
-            alt="profile"
-            className="profilePic mr-3"
-          />
+          <img src={profilePic} alt="profile" className="profilePic mr-3" />
           <div className="titleBox mx-3 d-flex flex-column align-items-start">
             <h1>Abdul Mahmood</h1>
             <h5>Junior Backend Dev w/ Frontend Knowledge</h5>
@@ -51,7 +48,7 @@ function HomePage(props: homePageType) {
               props.activeTab === 0 ? "aboutSection activeTab" : "aboutSection"
             }
           >
-            HI
+            {props.activeTab !== 0 && "HELLO"}
           </div>
           <div
             onClick={() => props.changeTab(1)}
@@ -61,6 +58,7 @@ function HomePage(props: homePageType) {
                 : "projectsSection"
             }
           >
+            {props.activeTab !== 1 && "HOLA"}
             <CardDeck className="p-4">
               <Card className="soloCard">
                 <Card.Img
@@ -132,7 +130,7 @@ function HomePage(props: homePageType) {
                 : "teamProjectsSection"
             }
           >
-            BONJOUR
+            {props.activeTab !== 2 && "BONJOUR"}
           </div>
         </Col>
       </Row>
