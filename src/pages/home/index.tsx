@@ -7,6 +7,7 @@ import { reduxStore } from "../../types/reduxInterfaces";
 import { changeTabDispatch } from "../../types/dispatchInterfaces";
 import profilePic from "../../profilePic.jpeg";
 import "./home.css";
+import AboutSection from "../../components/AboutSection";
 
 type homePageType = reduxStore & changeTabDispatch;
 
@@ -49,6 +50,7 @@ function HomePage(props: homePageType) {
             }
           >
             {props.activeTab !== 0 && "HELLO"}
+            <AboutSection />
           </div>
           <div
             onClick={() => props.changeTab(1)}
