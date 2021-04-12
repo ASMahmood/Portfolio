@@ -6,7 +6,10 @@ function AboutSection() {
   return (
     <Container className="w-100 h-100">
       <Row className="h-100">
-        <Col xs={6} className="bioHalf pt-5">
+        <Col
+          xs={6}
+          className="bioHalf d-flex flex-column align-content-center justify-content-center py-5 px-5"
+        >
           <p>Good morning and/or evening! </p>
           <p>
             My name is Abdul Mahmood, and I'm a
@@ -47,6 +50,7 @@ function AboutSection() {
                 <li>Pair Programming</li>
                 <li>Agile</li>
                 <li>SCRUM</li>
+                <li>GitHub</li>
                 <li>Instant Coffee</li>
               </ul>
             </Col>
@@ -55,10 +59,18 @@ function AboutSection() {
                 <strong>Skills - Backend</strong>
               </p>
               <ul>
-                <li>JavaScript</li>
-                <li>HTML5</li>
-                <li>CSS</li>
-                <li>SQL</li>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>MongoDB & Mongoose</li>
+                <li>MySQL & Sequelize</li>
+                <li>Passport.js</li>
+                <li>OAuth</li>
+                <li>socket.io</li>
+                <li>multer</li>
+                <li>
+                  Cookies <small>yum</small>
+                </li>
+                <li>Test Driven Development via Jest</li>
               </ul>
             </Col>
             <Col xs={4}>
@@ -66,10 +78,12 @@ function AboutSection() {
                 <strong>Skills - Frontend</strong>
               </p>
               <ul>
-                <li>JavaScript</li>
-                <li>HTML5</li>
-                <li>CSS</li>
-                <li>SQL</li>
+                <li>React</li>
+                <li>TypeScript</li>
+                <li>React Redux</li>
+                <li>React Router Dom</li>
+                <li>Hooks</li>
+                <li>Bootstrap</li>
               </ul>
             </Col>
           </Row>
