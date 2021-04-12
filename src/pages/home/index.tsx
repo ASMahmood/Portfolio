@@ -32,8 +32,12 @@ export default function HomePage() {
           <div className="aboutSection">HI</div>
           <div className="projectsSection activeTab">
             <CardDeck className="p-4">
-              <Card bg="info" className="soloCard">
-                <Card.Img variant="top" src="holder.js/100px160" />
+              <Card className="soloCard">
+                <Card.Img
+                  variant="top"
+                  className="projectPreview"
+                  src="https://place-hold.it/300x180"
+                />
                 <Card.Body>
                   <Card.Title>DRAW</Card.Title>
                   <Card.Text>
@@ -57,8 +61,12 @@ export default function HomePage() {
                   <small>Last updated Today</small>
                 </Card.Footer>
               </Card>
-              <Card bg="info" className="soloCard">
-                <Card.Img variant="top" src="holder.js/100px160" />
+              <Card className="soloCard">
+                <Card.Img
+                  variant="top"
+                  className="projectPreview"
+                  src="https://place-hold.it/300x180"
+                />
                 <Card.Body>
                   <Card.Title>Weather App</Card.Title>
                   <Card.Text>
@@ -70,8 +78,12 @@ export default function HomePage() {
                   <small>Last updated 26 Feb 2021</small>
                 </Card.Footer>
               </Card>
-              <Card bg="info" className="soloCard">
-                <Card.Img variant="top" src="holder.js/100px160" />
+              <Card className="soloCard">
+                <Card.Img
+                  variant="top"
+                  className="projectPreview"
+                  src="https://place-hold.it/300x180"
+                />
                 <Card.Body>
                   <Card.Title>Amazon Clone</Card.Title>
                   <Card.Text>PLACEHOLDER</Card.Text>

@@ -1,8 +1,9 @@
 #homepage {
-  background-color: rgb(23, 68, 105);
+  background-color: rgb(39, 39, 39);
   margin-top: 10vh;
   width: 80vw;
   height: 700px;
+  border: 1px solid black;
   border-radius: 80px 15px 15px 15px;
 }
 .profilePic {
@@ -22,7 +23,7 @@
 }
 .aboutSection {
   position: absolute;
-  background-color: bisque;
+  background-color: rgb(67, 87, 104);
   border-radius: 0 0 15px 15px;
   width: 95%;
   height: 90%;
@@ -38,7 +39,7 @@
   content: "About";
   width: 120px;
   height: 40px;
-  background-color: bisque;
+  background-color: rgb(67, 87, 104);
   border-radius: 5px 5px 0 0;
   top: -40px;
   left: 50px;
@@ -52,7 +53,7 @@
 
 .projectsSection {
   position: absolute;
-  background-color: brown;
+  background-color: rgb(84, 125, 161);
   border-radius: 0 0 15px 15px;
   width: 95%;
   height: 90%;
@@ -69,7 +70,7 @@
   content: "Solo Projects";
   width: 120px;
   height: 40px;
-  background-color: brown;
+  background-color: rgb(84, 125, 161);
   border-radius: 5px 5px 0 0;
   top: -40px;
   left: 150px;
@@ -135,10 +136,19 @@
   height: 50%;
 }
 
+.titleBox {
+  color: white;
+}
+
 .titleBox h1 {
   font-size: 50px;
 }
 
 .titleBox h5 {
   font-size: 19px;
+}
+
+.projectPreview {
+  width: 300px;
+  height: 180px;
 }
