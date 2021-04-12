@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, CardDeck, Card, Button } from "react-bootstrap";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import "./home.css";
 
@@ -18,15 +18,70 @@ export default function HomePage() {
             <h5>Junior Backend Dev w/ Frontend Knowledge</h5>
           </div>
           <div className="linksBox ml-auto mr-2 d-flex flex-column justify-content-between align-items-between">
-            <FaLinkedinIn />
-            <FaGithub />
+            <div className="socialMediaLink">
+              <FaLinkedinIn /> /abdul-samad-mahmood/
+            </div>
+            <div className="socialMediaLink">
+              <FaGithub /> /ASMahmood
+            </div>
           </div>
         </Col>
       </Row>
       <Row className="mt-5 h-75">
         <Col xs={12} className="position-relative">
           <div className="aboutSection">HI</div>
-          <div className="projectsSection activeTab">HELLO</div>
+          <div className="projectsSection activeTab">
+            <CardDeck className="p-4">
+              <Card bg="info" className="soloCard">
+                <Card.Img variant="top" src="holder.js/100px160" />
+                <Card.Body>
+                  <Card.Title>DRAW</Card.Title>
+                  <Card.Text>
+                    My Solo Capstone! This is a whiteboard app, with
+                    file-sharing capabilities, wherein companies can
+                    collaborate, discuss and draw images in real-time.
+                  </Card.Text>
+                  <div className="d-flex justify-content-between">
+                    <Button variant="light" className="projectLinks">
+                      <FaGithub className="mr-1" /> Frontend
+                    </Button>
+                    <Button variant="dark" className="projectLinks">
+                      Live
+                    </Button>
+                    <Button variant="light" className="projectLinks">
+                      <FaGithub className="mr-1" /> Backend
+                    </Button>
+                  </div>
+                </Card.Body>
+                <Card.Footer>
+                  <small>Last updated Today</small>
+                </Card.Footer>
+              </Card>
+              <Card bg="info" className="soloCard">
+                <Card.Img variant="top" src="holder.js/100px160" />
+                <Card.Body>
+                  <Card.Title>Weather App</Card.Title>
+                  <Card.Text>
+                    My first TypeScript project! An app that provides weather
+                    predications for any location, up to a week in advance.
+                  </Card.Text>
+                </Card.Body>
+                <Card.Footer>
+                  <small>Last updated 26 Feb 2021</small>
+                </Card.Footer>
+              </Card>
+              <Card bg="info" className="soloCard">
+                <Card.Img variant="top" src="holder.js/100px160" />
+                <Card.Body>
+                  <Card.Title>Amazon Clone</Card.Title>
+                  <Card.Text>PLACEHOLDER</Card.Text>
+                </Card.Body>
+                <Card.Footer>
+                  <small>Last updated 22 Jan 2021</small>
+                </Card.Footer>
+              </Card>
+            </CardDeck>
+          </div>
           <div className="teamProjectsSection">BONJOUR</div>
         </Col>
       </Row>
