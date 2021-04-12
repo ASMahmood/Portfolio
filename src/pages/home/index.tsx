@@ -1,9 +1,25 @@
 import React from "react";
 import { Container, Row, Col, CardDeck, Card, Button } from "react-bootstrap";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { Dispatch } from "redux";
+import { connect } from "react-redux";
+import { reduxStore } from "../../types/reduxInterfaces";
+import { changeTabDispatch } from "../../types/dispatchInterfaces";
 import "./home.css";
 
-export default function HomePage() {
+type homePageType = reduxStore & changeTabDispatch;
+
+const mapStateToProps = (state: reduxStore) => state;
+
+const mapDispatchToProps = (dispatch: Dispatch) => ({
+  changeTab: (tab: number) =>
+    dispatch({
+      type: "CHANGE_TAB",
+      payload: tab,
+    }),
+});
+
+function HomePage(props: homePageType) {
   return (
     <Container id="homepage">
       <Row>
@@ -29,8 +45,22 @@ export default function HomePage() {
       </Row>
       <Row className="mt-5 h-75">
         <Col xs={12} className="position-relative">
-          <div className="aboutSection">HI</div>
-          <div className="projectsSection activeTab">
+          <div
+            onClick={() => props.changeTab(0)}
+            className={
+              props.activeTab === 0 ? "aboutSection activeTab" : "aboutSection"
+            }
+          >
+            HI
+          </div>
+          <div
+            onClick={() => props.changeTab(1)}
+            className={
+              props.activeTab === 1
+                ? "projectsSection  activeTab"
+                : "projectsSection"
+            }
+          >
             <CardDeck className="p-4">
               <Card className="soloCard">
                 <Card.Img
@@ -94,9 +124,20 @@ export default function HomePage() {
               </Card>
             </CardDeck>
           </div>
-          <div className="teamProjectsSection">BONJOUR</div>
+          <div
+            onClick={() => props.changeTab(2)}
+            className={
+              props.activeTab === 2
+                ? "teamProjectsSection  activeTab"
+                : "teamProjectsSection"
+            }
+          >
+            BONJOUR
+          </div>
         </Col>
       </Row>
     </Container>
   );
 }
+
+export default connect(mapStateToProps, mapDispatchToProps)(HomePage);
