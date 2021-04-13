@@ -7,7 +7,7 @@ function AboutSection() {
     <Container className="w-100 h-100">
       <Row className="h-100">
         <Col
-          xs={6}
+          xs={4}
           className="bioHalf d-flex flex-column align-content-center justify-content-center p-5"
         >
           <p>Good morning and/or evening! </p>
@@ -21,7 +21,7 @@ function AboutSection() {
           <p></p>
         </Col>
         <Col
-          xs={6}
+          xs={8}
           className="skillHalf d-flex flex-column align-content-center justify-content-center p-5"
         >
           <Row>
@@ -87,7 +87,7 @@ function AboutSection() {
                 <li>Hooks</li>
                 <li>Bootstrap</li>
                 <li>HTML5</li>
-                <li>CSS</li>
+                <li>CSS3</li>
               </ul>
             </Col>
           </Row>
