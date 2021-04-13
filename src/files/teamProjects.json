@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Instagram Clone",
+    "description": "This was the final group project of Strive School. Together with 3 others, we created a clone of instagram from scratch",
+    "preview": "https://place-hold.it/300x180",
+    "participants": ["Mirela Ekic", "Ari Razab", "Sued Sinani"],
+    "frontendLink": "https://github.com/ASMahmood/Capstone-FE",
+    "backendLink": "https://github.com/ASMahmood/Capstone-BE",
+    "hostedLink": "https://capstone-fe.vercel.app/login",
+    "timeLimitDays": 5,
+    "lastUpdated": "Today"
+  },
+  {
+    "name": "Instagram Clone",
+    "description": "This was the final group project of Strive School. Together with 3 others, we created a clone of instagram from scratch",
+    "preview": "https://place-hold.it/300x180",
+    "participants": ["Mirela Ekic", "Ari Razab", "Sued Sinani"],
+    "frontendLink": "https://github.com/ASMahmood/Capstone-FE",
+    "backendLink": "https://github.com/ASMahmood/Capstone-BE",
+    "hostedLink": "https://capstone-fe.vercel.app/login",
+    "timeLimitDays": 5,
+    "lastUpdated": "Today"
+  },
+  {
+    "name": "Instagram Clone",
+    "description": "This was the final group project of Strive School. Together with 3 others, we created a clone of instagram from scratch",
+    "preview": "https://place-hold.it/300x180",
+    "participants": ["Mirela Ekic", "Ari Razab", "Sued Sinani"],
+    "frontendLink": "https://github.com/ASMahmood/Capstone-FE",
+    "backendLink": "https://github.com/ASMahmood/Capstone-BE",
+    "hostedLink": "https://capstone-fe.vercel.app/login",
+    "timeLimitDays": 5,
+    "lastUpdated": "Today"
+  }
+]

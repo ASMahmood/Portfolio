@@ -8,8 +8,10 @@ import { changeTabDispatch } from "../../types/dispatchInterfaces";
 import profilePic from "../../profilePic.jpeg";
 import "./home.css";
 import soloArray from "../../files/soloProjects.json";
+import teamArray from "../../files/teamProjects.json";
 import AboutSection from "../../components/AboutSection";
 import SoloProject from "../../components/SoloProjects";
+import TeamProject from "../../components/TeamProjects";
 
 type homePageType = reduxStore & changeTabDispatch;
 
@@ -78,6 +80,11 @@ function HomePage(props: homePageType) {
             }
           >
             {props.activeTab !== 2 && "BONJOUR"}
+            <CardDeck className="p-4">
+              {teamArray.map((project) => (
+                <TeamProject {...project} />
+              ))}
+            </CardDeck>
           </div>
         </Col>
       </Row>
