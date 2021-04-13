@@ -10,6 +10,9 @@ function TeamProjects(props: teamProject) {
       <Card.Img variant="top" className="projectPreview" src={props.preview} />
       <Card.Body>
         <Card.Title>{props.name}</Card.Title>
+        <Card.Subtitle className="participantsSubtitle pb-2">
+          {props.participants.map((other) => `${other} - `)}Myself
+        </Card.Subtitle>
         <div className="d-flex flex-column justify-content-between">
           <Card.Text>{props.description}</Card.Text>
           <div className="d-flex justify-content-between">
@@ -26,7 +29,10 @@ function TeamProjects(props: teamProject) {
         </div>
       </Card.Body>
       <Card.Footer>
-        <small>Last updated {props.lastUpdated}</small>
+        <small>
+          {props.timeLimitDays} day time limit - Last updated{" "}
+          {props.lastUpdated}
+        </small>
       </Card.Footer>
     </Card>
   );
