@@ -1,0 +1,29 @@
+[
+  {
+    "name": "DRAW",
+    "description": "My Solo Capstone! This is a whiteboard app, with file-sharing capabilities, wherein companies can collaborate, discuss and draw images in real-time.",
+    "preview": "https://place-hold.it/300x180",
+    "frontendLink": "https://github.com/ASMahmood/Capstone-FE",
+    "backendLink": "https://github.com/ASMahmood/Capstone-BE",
+    "hostedLink": "https://capstone-fe.vercel.app/login",
+    "lastUpdated": "Today"
+  },
+  {
+    "name": "Weather App",
+    "description": "My first TypeScript project! An app that provides weather predications for any location, up to a week in advance.",
+    "preview": "https://place-hold.it/300x180",
+    "frontendLink": "https://github.com/ASMahmood/M8-D10-FRONTEND",
+    "backendLink": "https://github.com/ASMahmood/M8-D10-WEATHER-APP-BACKEND",
+    "hostedLink": "N/A",
+    "lastUpdated": "26 Feb 2021"
+  },
+  {
+    "name": "Amazon?",
+    "description": "PLACEHOLDER",
+    "preview": "https://place-hold.it/300x180",
+    "frontendLink": "https://github.com/ASMahmood/M8-D10-FRONTEND",
+    "backendLink": "https://github.com/ASMahmood/M8-D10-WEATHER-APP-BACKEND",
+    "hostedLink": "N/A",
+    "lastUpdated": "22 Jan 2021"
+  }
+]

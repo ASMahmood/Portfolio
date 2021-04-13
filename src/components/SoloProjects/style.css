@@ -1,0 +1,15 @@
+.projectPreview {
+  width: 300px;
+  height: 180px;
+}
+
+.projectLinks {
+  padding: 2px !important;
+  display: flex !important;
+  align-items: center !important;
+  font-size: 13px !important;
+}
+
+.soloCard small {
+  color: rgb(39, 39, 39) !important;
+}

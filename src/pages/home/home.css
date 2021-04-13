@@ -1,7 +1,7 @@
 #homepage {
   background-color: rgb(39, 39, 39);
   margin-top: 10vh;
-  width: 80vw;
+  min-width: 1100px;
   height: 700px;
   border: 1px solid black;
   border-radius: 80px 15px 15px 15px;
@@ -12,9 +12,7 @@
   object-fit: cover;
   border-radius: 75px 5px 5px 5px;
 }
-.soloCard small {
-  color: rgb(39, 39, 39) !important;
-}
+
 .activeTab {
   z-index: 10 !important;
 }
@@ -23,7 +21,7 @@
 }
 .aboutSection {
   position: absolute;
-  background-color: rgb(67, 87, 104);
+  background-color: #5476b8;
   border-radius: 0 0 15px 15px;
   width: 95%;
   height: 90%;
@@ -40,7 +38,7 @@
   content: "About";
   width: 120px;
   height: 40px;
-  background-color: rgb(67, 87, 104);
+  background-color: #5476b8;
   border-radius: 5px 5px 0 0;
   top: -40px;
   left: 50px;
@@ -54,7 +52,7 @@
 
 .projectsSection {
   position: absolute;
-  background-color: rgb(84, 125, 161);
+  background-color: #4c68a1;
   border-radius: 0 0 15px 15px;
   width: 95%;
   height: 90%;
@@ -71,14 +69,14 @@
   content: "Solo Projects";
   width: 120px;
   height: 40px;
-  background-color: rgb(84, 125, 161);
+  background-color: #4c68a1;
   border-radius: 5px 5px 0 0;
   top: -40px;
   left: 150px;
 }
 .teamProjectsSection {
   position: absolute;
-  background-color: cadetblue;
+  background-color: #8eaeed;
   border-radius: 0 0 15px 15px;
   width: 95%;
   height: 90%;
@@ -95,17 +93,10 @@
   content: "Team Projects";
   width: 120px;
   height: 40px;
-  background-color: cadetblue;
+  background-color: #8eaeed;
   border-radius: 5px 5px 0 0;
   top: -40px;
   left: 250px;
-}
-
-.projectLinks {
-  padding: 2px !important;
-  display: flex !important;
-  align-items: center !important;
-  font-size: 13px !important;
 }
 
 .socialMediaLink {
@@ -147,9 +138,4 @@
 
 .titleBox h5 {
   font-size: 19px;
-}
-
-.projectPreview {
-  width: 300px;
-  height: 180px;
 }

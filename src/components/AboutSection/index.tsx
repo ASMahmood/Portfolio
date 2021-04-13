@@ -8,18 +8,22 @@ function AboutSection() {
       <Row className="h-100">
         <Col
           xs={6}
-          className="bioHalf d-flex flex-column align-content-center justify-content-center py-5 px-5"
+          className="bioHalf d-flex flex-column align-content-center justify-content-center p-5"
         >
           <p>Good morning and/or evening! </p>
           <p>
-            My name is Abdul Mahmood, and I'm a
-            <strong> London-based, MERN stack, web developer</strong>. While I
-            may be living in London, I am fully ready for
-            <strong> remote working.</strong>
+            I am a<strong> London-based, MERN stack, web developer</strong>, who
+            is ready and waiting to work,
+            <strong> remotely or local.</strong> Thanks to the rigorous
+            curriculum with which the following skills were attained, my rate of
+            learning is a point of personal pride.
           </p>
           <p></p>
         </Col>
-        <Col xs={6} className="skillHalf pt-5">
+        <Col
+          xs={6}
+          className="skillHalf d-flex flex-column align-content-center justify-content-center p-5"
+        >
           <Row>
             <Col xs={6}>
               <p>
@@ -35,8 +39,7 @@ function AboutSection() {
               </p>
               <ul>
                 <li>JavaScript</li>
-                <li>HTML5</li>
-                <li>CSS</li>
+                <li>TypeScript</li>
                 <li>SQL</li>
               </ul>
             </Col>
@@ -79,11 +82,12 @@ function AboutSection() {
               </p>
               <ul>
                 <li>React</li>
-                <li>TypeScript</li>
                 <li>React Redux</li>
                 <li>React Router Dom</li>
                 <li>Hooks</li>
                 <li>Bootstrap</li>
+                <li>HTML5</li>
+                <li>CSS</li>
               </ul>
             </Col>
           </Row>

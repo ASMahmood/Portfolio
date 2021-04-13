@@ -7,7 +7,9 @@ import { reduxStore } from "../../types/reduxInterfaces";
 import { changeTabDispatch } from "../../types/dispatchInterfaces";
 import profilePic from "../../profilePic.jpeg";
 import "./home.css";
+import soloArray from "../../files/soloProjects.json";
 import AboutSection from "../../components/AboutSection";
+import SoloProject from "../../components/SoloProjects";
 
 type homePageType = reduxStore & changeTabDispatch;
 
@@ -62,66 +64,9 @@ function HomePage(props: homePageType) {
           >
             {props.activeTab !== 1 && "HOLA"}
             <CardDeck className="p-4">
-              <Card className="soloCard">
-                <Card.Img
-                  variant="top"
-                  className="projectPreview"
-                  src="https://place-hold.it/300x180"
-                />
-                <Card.Body>
-                  <Card.Title>DRAW</Card.Title>
-                  <Card.Text>
-                    My Solo Capstone! This is a whiteboard app, with
-                    file-sharing capabilities, wherein companies can
-                    collaborate, discuss and draw images in real-time.
-                  </Card.Text>
-                  <div className="d-flex justify-content-between">
-                    <Button variant="light" className="projectLinks">
-                      <FaGithub className="mr-1" /> Frontend
-                    </Button>
-                    <Button variant="dark" className="projectLinks">
-                      Live
-                    </Button>
-                    <Button variant="light" className="projectLinks">
-                      <FaGithub className="mr-1" /> Backend
-                    </Button>
-                  </div>
-                </Card.Body>
-                <Card.Footer>
-                  <small>Last updated Today</small>
-                </Card.Footer>
-              </Card>
-              <Card className="soloCard">
-                <Card.Img
-                  variant="top"
-                  className="projectPreview"
-                  src="https://place-hold.it/300x180"
-                />
-                <Card.Body>
-                  <Card.Title>Weather App</Card.Title>
-                  <Card.Text>
-                    My first TypeScript project! An app that provides weather
-                    predications for any location, up to a week in advance.
-                  </Card.Text>
-                </Card.Body>
-                <Card.Footer>
-                  <small>Last updated 26 Feb 2021</small>
-                </Card.Footer>
-              </Card>
-              <Card className="soloCard">
-                <Card.Img
-                  variant="top"
-                  className="projectPreview"
-                  src="https://place-hold.it/300x180"
-                />
-                <Card.Body>
-                  <Card.Title>Amazon Clone</Card.Title>
-                  <Card.Text>PLACEHOLDER</Card.Text>
-                </Card.Body>
-                <Card.Footer>
-                  <small>Last updated 22 Jan 2021</small>
-                </Card.Footer>
-              </Card>
+              {soloArray.map((project) => (
+                <SoloProject {...project} />
+              ))}
             </CardDeck>
           </div>
           <div
