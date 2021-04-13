@@ -11,5 +11,9 @@
 }
 
 .soloCard small {
-  color: rgb(39, 39, 39) !important;
+  color: rgb(119, 119, 119) !important;
+}
+
+.soloCard {
+  background-color: rgb(39, 39, 39) !important;
 }
