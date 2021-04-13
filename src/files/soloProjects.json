@@ -11,10 +11,10 @@
   {
     "name": "Weather App",
     "description": "My first TypeScript project! An app that provides weather predications for any location, up to a week in advance.",
-    "preview": "https://place-hold.it/300x180",
+    "preview": "weatherApp",
     "frontendLink": "https://github.com/ASMahmood/M8-D10-FRONTEND",
     "backendLink": "https://github.com/ASMahmood/M8-D10-WEATHER-APP-BACKEND",
-    "hostedLink": "N/A",
+    "hostedLink": "https://weather-app-typescript.vercel.app",
     "lastUpdated": "26 Feb 2021"
   },
   {
