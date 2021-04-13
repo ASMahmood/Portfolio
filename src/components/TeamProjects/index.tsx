@@ -2,12 +2,25 @@ import React from "react";
 import { Container, Row, Col, CardDeck, Card, Button } from "react-bootstrap";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { teamProject } from "../../types/jsonInterfaces";
+import linkedinGif from "../../images/linkedin.gif";
 import "./style.css";
 
 function TeamProjects(props: teamProject) {
+  const previewSelector = (name: string) => {
+    switch (name) {
+      case "LinkedIn":
+        return linkedinGif;
+      default:
+        return "https://place-hold.it/300x180";
+    }
+  };
   return (
     <Card bg="none" text="light" className="soloCard">
-      <Card.Img variant="top" className="projectPreview" src={props.preview} />
+      <Card.Img
+        variant="top"
+        className="projectPreview"
+        src={previewSelector(props.preview)}
+      />
       <Card.Body>
         <Card.Title>{props.name}</Card.Title>
         <Card.Subtitle className="participantsSubtitle pb-2">

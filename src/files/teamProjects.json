@@ -13,7 +13,7 @@
   {
     "name": "LinkedIn Clone",
     "description": "The culmination of 2 weeks of work with 2 different teams. Week 1: Frontend, Week 2: Backend.",
-    "preview": "https://place-hold.it/300x180",
+    "preview": "LinkedIn",
     "participants": [
       "Davide Pacco",
       "Evgeni Gyurov",
@@ -21,9 +21,9 @@
       "Abdugaffor Abdurahimov",
       "Drita Skeraj"
     ],
-    "frontendLink": "https://github.com/ASMahmood/Capstone-FE",
-    "backendLink": "https://github.com/ASMahmood/Capstone-BE",
-    "hostedLink": "https://capstone-fe.vercel.app/login",
+    "frontendLink": "https://github.com/ASMahmood/Buildweek-3-Frontend",
+    "backendLink": "https://github.com/ASMahmood/Buildweek-3-LinkedIn-Backend",
+    "hostedLink": "https://buildweek-3-frontend.vercel.app",
     "timeLimitDays": 10,
     "lastUpdated": "29 Jan 2021"
   },
