@@ -2,12 +2,27 @@ import React from "react";
 import { Container, Row, Col, CardDeck, Card, Button } from "react-bootstrap";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { soloProject } from "../../types/jsonInterfaces";
+import drawGif from "../../images/draw.gif";
 import "./style.css";
 
 function SoloProjects(props: soloProject) {
+  console.log(props);
+  const previewSelector = (name: string) => {
+    switch (name) {
+      case "drawGif":
+        return drawGif;
+      default:
+        return "https://place-hold.it/300x180";
+    }
+  };
+
   return (
     <Card bg="none" text="light" className="soloCard">
-      <Card.Img variant="top" className="projectPreview" src={props.preview} />
+      <Card.Img
+        variant="top"
+        className="projectPreview"
+        src={previewSelector(props.preview)}
+      />
       <Card.Body>
         <Card.Title>{props.name}</Card.Title>
         <div className="d-flex flex-column justify-content-between">
