@@ -86,6 +86,16 @@ function HomePage(props: homePageType) {
               ))}
             </CardDeck>
           </div>
+          <div
+            onClick={() => props.changeTab(3)}
+            className={
+              props.activeTab === 3
+                ? "contactSection  activeTab"
+                : "contactSection"
+            }
+          >
+            {props.activeTab !== 3 && "GUTEN TAG"}
+          </div>
         </Col>
       </Row>
     </Container>

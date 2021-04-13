@@ -46,7 +46,8 @@
 
 .aboutSection:hover,
 .projectsSection:hover,
-.teamProjectsSection:hover {
+.teamProjectsSection:hover,
+.contactSection:hover {
   top: -20px;
 }
 
@@ -58,7 +59,7 @@
   height: 90%;
   top: 0;
   left: 2%;
-  z-index: 3;
+  z-index: 4;
   transition: 0.1s ease-in;
 }
 
@@ -82,7 +83,7 @@
   height: 90%;
   top: 0;
   left: 3%;
-  z-index: 1;
+  z-index: 3;
   transition: 0.1s ease-in;
 }
 
@@ -97,6 +98,31 @@
   border-radius: 5px 5px 0 0;
   top: -40px;
   left: 250px;
+}
+
+.contactSection {
+  position: absolute;
+  background-color: #4c84ed;
+  border-radius: 0 0 15px 15px;
+  width: 95%;
+  height: 90%;
+  top: 0;
+  left: 4%;
+  z-index: 2;
+  transition: 0.1s ease-in;
+}
+
+.contactSection::before {
+  position: absolute;
+  cursor: pointer;
+  padding: 5px 1px;
+  content: "Contact Me";
+  width: 120px;
+  height: 40px;
+  background-color: #4c84ed;
+  border-radius: 5px 5px 0 0;
+  top: -40px;
+  left: 350px;
 }
 
 .socialMediaLink {
