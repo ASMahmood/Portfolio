@@ -1,6 +1,7 @@
 .projectPreview {
   width: 300px;
   height: 180px;
+  object-fit: cover;
 }
 
 .projectLinks {

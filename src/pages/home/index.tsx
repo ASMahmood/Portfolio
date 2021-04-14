@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col, CardDeck, Card, Button } from "react-bootstrap";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { AiOutlineMail } from "react-icons/ai";
 import { Dispatch } from "redux";
 import { connect } from "react-redux";
 import { reduxStore } from "../../types/reduxInterfaces";
@@ -35,12 +36,15 @@ function HomePage(props: homePageType) {
             <h1>Abdul Mahmood</h1>
             <h5>Junior Backend Dev w/ Frontend Knowledge</h5>
           </div>
-          <div className="linksBox ml-auto mr-2 d-flex flex-column justify-content-between align-items-between">
+          <div className="linksBox h-75 ml-auto mr-2 d-flex flex-column justify-content-between align-items-between">
             <div className="socialMediaLink">
               <FaLinkedinIn /> /abdul-samad-mahmood/
             </div>
             <div className="socialMediaLink">
               <FaGithub /> /ASMahmood
+            </div>
+            <div className="socialMediaLink">
+              <AiOutlineMail /> abdul_mahmood@hotmail.co.uk
             </div>
           </div>
         </Col>
@@ -85,16 +89,6 @@ function HomePage(props: homePageType) {
                 <TeamProject {...project} />
               ))}
             </CardDeck>
-          </div>
-          <div
-            onClick={() => props.changeTab(3)}
-            className={
-              props.activeTab === 3
-                ? "contactSection  activeTab"
-                : "contactSection"
-            }
-          >
-            {props.activeTab !== 3 && "GUTEN TAG"}
           </div>
         </Col>
       </Row>
