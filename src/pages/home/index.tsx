@@ -34,7 +34,7 @@ function HomePage(props: homePageType) {
           <img src={profilePic} alt="profile" className="profilePic mr-3" />
           <div className="titleBox mx-3 d-flex flex-column align-items-start">
             <h1>Abdul Mahmood</h1>
-            <h5>Junior Backend Dev w/ Frontend Knowledge</h5>
+            <h5>Backend Dev w/ Frontend Knowledge</h5>
           </div>
           <div className="linksBox h-75 ml-auto mr-2 d-flex flex-column justify-content-between align-items-between">
             <div className="socialMediaLink">
